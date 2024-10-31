@@ -10,7 +10,7 @@ export const tmp = '';
   : axios - 비동기 처리
   : zustand - 전역 상태 관리
 
-  - npm i 뒤에 각 라이브러리명 사용 
+  - npm i 뒤에 각 라이브러리명rex 사용 
   
   2. 공통 상수, 공통 함수, 공통 타입 명시 
   : 화면 URL 

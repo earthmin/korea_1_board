@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Board() {
   return (
-    <div>index</div>
+    <div>Board</div>
   )
 }
