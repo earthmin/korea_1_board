@@ -27,6 +27,18 @@ export default function E_zustand() {
   //# state: cart(장바구니) 값에 대한 전역 상태 관리
   const { items, addItem, removeItem, clearCart } = useCartStore();
 
+    //& 타입스크립트 타입 추론 기능 &//
+    const array = [
+      { a: 1, b: 2 },
+      { a: 2, b: 3 },
+      { a: 3, b: 4 },
+      { a: 4, b: 5 },
+    ];
+  
+    array.map((arr) => {
+      console.log(arr.a);
+    });
+
   //* return: zustand 전역 상태 관리에 대한 출력
   return (
     <div style={{

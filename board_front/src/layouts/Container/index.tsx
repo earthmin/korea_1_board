@@ -1,10 +1,10 @@
 import React from 'react'
-import { Outlet, useLocation } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom';
 import { AUTH_PATH } from '../../constants';
-import Footer from './Footer';
 import Header from '../Header';
 import useThemeStore from '../../stores/theme.store';
 import { Box } from '@mui/material';
+import Footer from './Footer';
 
 /*
 ! Outlet 컴포넌트
@@ -29,8 +29,8 @@ export default function Container() {
 
   return (
     <>
-        <Header /> 
-        <hr />
+      <Header />
+      <hr />
 
       {/* 자식 컴포넌트가 해당 위치에서 렌더링 */}
       <Box
@@ -41,7 +41,7 @@ export default function Container() {
           color: theme === 'light' ? 'black' : 'white',
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center',
+          // alignItems: 'center',
           justifyContent: 'center',
           padding: 2
         }}
@@ -69,7 +69,7 @@ export default function Container() {
         >> && 논리 연산자 뒤의 값을 "해석하지 않음"
       */}
 
-<hr />
+      <hr />
       { pathname !== AUTH_PATH && <Footer /> }
       {/* { pathname === AUTH_PATH || <Footer /> } */}
     </>
